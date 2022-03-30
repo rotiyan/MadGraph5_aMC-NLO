@@ -22,7 +22,7 @@ The Docker image contains:
 - Use `docker pull` to pull down the image corresponding to the tag. For example:
 
 ```
-docker pull matthewfeickert/madgraph5-amc-nlo:mg5_amc2.7.0-python3
+docker pull rotiyan/mg5_amc
 ```
 
 ## Tests
@@ -30,5 +30,5 @@ docker pull matthewfeickert/madgraph5-amc-nlo:mg5_amc2.7.0-python3
 As an example test you can run the [top mass scan example](https://answers.launchpad.net/mg5amcnlo/+faq/2186) in the `tests` directory inside the Docker container by running the following from the top level directory of this repository
 
 ```
-docker run --rm -v $PWD:$PWD -w $PWD matthewfeickert/madgraph5-amc-nlo:mg5_amc2.7.0-python3 "mg5_aMC tests/test_top_mass_scan.txt"
+docker run --rm -v $PWD:$PWD -w $PWD  rotiyan/mg5_amc /bin/bash
 ```
